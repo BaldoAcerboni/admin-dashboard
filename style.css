@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr;
+  background-color: rgb(200, 200, 200);
+}
+
+.dashboard {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+  background-color: rgb(50, 50, 255);
+}
+
+.dashboard h2 {
+  color: rgb(255, 255, 255);
+}
+
+.dashboard > ul {
+  list-style: none;
+  margin: 3rem 0;
+}
+
+.dashboard > ul span {
+  font-size: 1rem;
+  position: relative;
+  top: 0.2rem;
+  right: 0.4rem;
+}
+.dashboard > h2 > span {
+  position: relative;
+  top: 0.2rem;
+  margin-right: 1rem;
+}
+
+.dashboard a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.dashboard a:hover {
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
+
+.dashboard > ul > li {
+  margin-left: -1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.nav-bar {
+  grid-column: 2 / -1;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 5px 3px rgb(50, 50, 50);
+}
+
+.nav-bar input[type="search"] {
+  width: calc(100% - 3rem);
+  background-color: rgb(200, 200, 200);
+  border-radius: 5rem;
+}
+
+.nav-bar > .search > span {
+  position: relative;
+  top: 0.6rem;
+}
+
+.nav-bar > .who {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  align-content: center;
+  justify-items: center;
+}
+
+.nav-bar > .hi {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.hi > span {
+  font-size: 4rem;
+  grid-row: 1 / -1;
+  justify-self: end;
+  align-self: center;
+}
+
+.hi > .name {
+  font-size: 1.5rem;
+  align-self: start;
+}
+
+.hi > .greet {
+  font-size: 0.8rem;
+  align-self: end;
+}
+
+.btns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+.btn {
+  color:rgb(255, 255, 255);
+  background-color: rgb(50, 50, 255);
+  border: none;
+  border-radius: 5rem;
+  padding: 0.3rem;
+}
+
+.projects {
+  grid-row: 2 / -1;
+  padding: 15px;
+  overflow: auto;
+  min-width: 250px;
+}
+
+.projects > h2 {
+  margin-bottom: 10px;
+}
+
+.projects > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.projects > div > div {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 5px 3px rgb(50, 50, 50);
+}
+
+.projects img {
+  max-width: 100%;
+  object-fit: fill;
+}
+
+.projects a {
+  text-decoration: none;
+  color: rgb(50, 50, 255);
+}
+
+.announcements {
+  padding: 10px;
+}
+
+.announcements  h3 {
+  font-size: 1rem;
+  margin: 10px auto;
+}
+
+.announcements p {
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+
+.announcements  h2 {
+  margin-bottom: 10px;
+}
+
+.announcements > div {
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 5px 3px rgb(50, 50, 50);
+}
+
+.trending {
+  padding: 10px;
+}
+
+.trending > h2 {
+  margin-bottom: 10px;
+}
+
+.trending > div > div {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 10px;
+}
+
+.trending > div {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 5px 3px rgb(50, 50, 50);
+}
+
+.trending span {
+  grid-row: 1 / -1;
+  justify-self: end;
+  align-self: center;
+  font-size: 2rem;
+}
+
+.trending .at {
+  font-size: 0.8rem;
+}
+
+.trending .what {
+  font-size: 0.8rem;
+  color: rgb(100, 100, 100);
+}
